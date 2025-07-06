@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro mou nejmilejší lásku...</title>
+    <title>Pro Terezku</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container welcome-screen">
-        <h1 class="welcome-title">Pro mou nejmilejší lásku...</h1>
-        <p class="welcome-text">Otevři si malé okno do našich vzpomínek.</p>
+        <h1 class="welcome-title">Ahojky Terezko, rozhodl jsem připravit ti něco menšího.</h1>
+        <p class="welcome-text">Zadej jméno mého prvního chlupáče. Začíná na A.</p>
         <input type="password" id="passwordInput" placeholder="Zadej heslo">
-        <button id="enterButton">Otevřít překvapení</button>
+        <button id="enterButton">Jseš si jistá že si zadala velké A?</button>
+        <p>Prosím dělej na PC.</p>
         <p id="errorMessage" class="error-message"></p>
     </div>
 
@@ -21,9 +22,9 @@
         document.getElementById('enterButton').addEventListener('click', function() {
             const enteredPassword = document.getElementById('passwordInput').value;
             if (enteredPassword === correctPassword) {
-                window.location.href = 'surprise.html'; // Přesměrování na hlavní stránku
+                window.location.href = 'strana1_begin.html'; // Přesměrování na hlavní stránku
             } else {
-                document.getElementById('errorMessage').textContent = 'Špatné heslo, pokus se znovu!';
+                document.getElementById('errorMessage').textContent = 'Špatné heslo, pokus se znovu! Nezapomeň, že začíná na velké A.';
             }
         });
         // Odstranit input a button, pokud heslo nechceš

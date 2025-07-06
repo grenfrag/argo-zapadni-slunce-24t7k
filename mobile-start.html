@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dárek na větší obrazovku</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lora', serif;
+            background: linear-gradient(135deg, #fbeaff, #fff5ee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #4a148c;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(106, 27, 154, 0.15);
+            max-width: 90%;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .link-box {
+            background-color: #f3e5f5;
+            padding: 10px 15px;
+            border-radius: 10px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 0.95em;
+            margin-bottom: 25px;
+        }
+
+        .email-button {
+            background-color: #8e24aa;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .email-button:hover {
+            background-color: #6a1b9a;
+            transform: translateY(-2px);
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">💜</div>
+        <h1>Tenhle dárek je dělán spíše pro počítač...</h1>
+        <p>Zkus ho otevřít na počítači, kde bude všechno krásně vidět (a správně fugnovat).</p>
+
+        <div class="link-box">
+            https://grenfrag.github.io/argo-zapadni-slunce-24t7k
+        </div>
+
+        <br>
+        <a href="mailto:?subject=Krásné překvapení&body=Podívej se na tohle: https://grenfrag.github.io/argo-zapadni-slunce-24t7k" class="email-button">Pošli si odkaz na e-mail</a>
+    </div>
+</body>
+</html>
+<!--
+    Tento HTML kód je určen pro mobilní zařízení a zobrazuje zprávu, že dárek je příliš velký pro malou obrazovku.
+    Obsahuje odkaz na počítačovou verzi a tlačítko pro odeslání odkazu na e-mail.
+    Používá moderní design s animacemi a přechody.
+-->

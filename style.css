@@ -1,0 +1,174 @@
+/* Upravený styl do fialové a s jemnými animacemi */
+body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    color: #2d0036;
+    background-color: #f3e5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    animation: fadeInBody 2s ease-out;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(102, 51, 153, 0.3);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.welcome-screen {
+    background-color: rgba(243, 229, 245, 0.95);
+}
+
+.welcome-title, .surprise-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.welcome-text, .surprise-extra p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #4a148c;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+#passwordInput {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ba68c8;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #f8eaf6;
+}
+
+#enterButton {
+    background-color: #8e24aa;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#enterButton:hover {
+    background-color: #7b1fa2;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #d32f2f;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.message-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ce93d8;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    text-align: left;
+    box-shadow: inset 0 0 10px rgba(103, 58, 183, 0.05);
+    animation: fadeIn 1.5s ease-in;
+}
+
+.message-box p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #4a148c;
+}
+
+.video-container iframe {
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.video-container video {
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.image-gallery img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(106, 27, 154, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.spotify-link {
+    display: inline-block;
+    background-color: #7b1fa2;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotify-link:hover {
+    background-color: #6a1b9a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .welcome-title, .surprise-title {
+        font-size: 2.2em;
+    }
+    .container {
+        padding: 25px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-title, .surprise-title {
+        font-size: 1.8em;
+    }
+    .container {
+        padding: 20px;
+    }
+    #passwordInput {
+        width: 100%;
+    }
+    #enterButton {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+}

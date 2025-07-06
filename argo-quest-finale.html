@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajný konec Argo quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="surprise-title">🕵️‍♀️ Finální překvapení</h1>
+
+        <div id="pc-only-content" style="display: none;">
+            <p class="message-box">
+                Tak si to dala! 🎉
+                <br><br>
+                Tohle je tajný konec Argo questu, který jsi našla. Jne díky sobě. Možná i díky mé pomoci, ale hlavně díky tvé vytrvalosti a důvtipu. Jednou si chtěla po mě trend na TikToku, tak tady ho máš.
+            </p>
+        </div>
+        <div class="video-container"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fKfniuBoX0w?si=ELuQltrcMX-8UKSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        if (window.innerWidth > 900) {
+            document.getElementById("pc-only-content").style.display = "block";
+            document.getElementById("mobile-message").style.display = "none";
+        } else {
+            document.getElementById("pc-only-content").style.display = "none";
+            document.getElementById("mobile-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kočičí chaos</title>
+  <link rel="stylesheet" href="footer-nav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background: linear-gradient(135deg, #fbeaff, #fff5ee);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      animation: fadeInBody 1.5s ease-out;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .image-item {
+      position: absolute;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(106, 27, 154, 0.2);
+      transition: transform 0.3s ease, z-index 0.3s ease;
+      cursor: pointer;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .image-item:hover {
+      transform: scale(1.2);
+      z-index: 100;
+    }
+
+    .cat-large   { width: 200px; height: auto; }
+    .cat-medium  { width: 150px; height: auto; }
+    .cat-small   { width: 100px; height: auto; }
+    .cat-tiny    { width: 80px; height: auto; }
+
+    .monkey-hidden {
+      width: 90px;
+      height: 90px;
+      border-radius: 10px;
+      z-index: 0;
+    }
+
+    /* Rotace a hover efekty */
+    .rotate--25 { transform: rotate(-25deg); }
+    .rotate--25:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate--20 { transform: rotate(-20deg); }
+    .rotate--20:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate--18 { transform: rotate(-18deg); }
+    .rotate--18:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate--16 { transform: rotate(-16deg); }
+    .rotate--16:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate--12 { transform: rotate(-12deg); }
+    .rotate--12:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate--8 { transform: rotate(-8deg); }
+    .rotate--8:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate--5 { transform: rotate(-5deg); }
+    .rotate--5:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-6  { transform: rotate(6deg); }
+    .rotate-6:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-8  { transform: rotate(8deg); }
+    .rotate-8:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-10 { transform: rotate(10deg); }
+    .rotate-10:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-14 { transform: rotate(14deg); }
+    .rotate-14:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-15 { transform: rotate(15deg); }
+    .rotate-15:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-18 { transform: rotate(18deg); }
+    .rotate-18:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-22 { transform: rotate(22deg); }
+    .rotate-22:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-25 { transform: rotate(25deg); }
+    .rotate-25:hover { transform: rotate(0deg) scale(1.2); }
+
+    .rotate-12 { transform: rotate(12deg); }
+    .rotate-12:hover { transform: rotate(0deg) scale(1.5); }
+
+    .rotate--10 { transform: rotate(-10deg); }
+    .rotate--10:hover { transform: rotate(0deg) scale(1.5); }
+
+    
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Náhodně rozmístěné kočky s náhodnou velikostí -->
+<img src="images/cats/cat1.jpg"     class="image-item rotate--12" style="top: 6%;  left: 8%;   width: 350px; height: auto;" alt="Kočka">
+<img src="images/cats/cat2.jfif"    class="image-item rotate-8"   style="top: 10%; left: 75%;  width: 350px; height: auto;" alt="Kočka">
+<img src="images/cats/cat3.jpeg"    class="image-item rotate--5"  style="top: 10%; left: 58%;  width: 255px; height: auto;" alt="Kočka">
+<img src="images/cats/cat4.jfif"    class="image-item rotate-15"  style="top: 38%; left: 18%;  width: 220px; height: auto;" alt="Kočka">
+<img src="images/cats/cat5.jfif"    class="image-item rotate--20" style="top: 30%; left: 52%;  width: 250px; height: auto;" alt="Kočka">
+<img src="images/cats/cat6.jfif"    class="image-item rotate-25"  style="top: 5%; left: 40%;  width: 280px; height: auto;" alt="Kočka">
+<img src="images/cats/cat7.jpg"     class="image-item rotate--18" style="top: 62%; left: 3%;   width: 235px; height: auto;" alt="Kočka">
+<img src="images/cats/cat8.jpg"     class="image-item rotate-10"  style="top: 28%; left: 82%;  width: 260px; height: auto;" alt="Kočka">
+<img src="images/cats/cat9.webp"    class="image-item rotate--8"  style="top: 65%; left: 46%;  width: 200px; height: auto;" alt="Kočka">
+<img src="images/cats/cat10.jpg"    class="image-item rotate-22"  style="top: 22%; left: 25%;  width: 190px; height: auto;" alt="Kočka">
+<img src="images/cats/cat11.jfif"   class="image-item rotate--25" style="top: 48%; left: 10%;  width: 230px; height: auto;" alt="Kočka">
+<img src="images/cats/cat12.jfif"   class="image-item rotate-6"   style="top: 53%; left: 74%;  width: 210px; height: auto;" alt="Kočka">
+<img src="images/cats/cat13.jpeg"   class="image-item rotate--12" style="top: 34%; left: 34%;  width: 225px; height: auto;" alt="Kočka">
+<img src="images/cats/cat14.jpg"    class="image-item rotate-14"  style="top: 50%; left: 58%;  width: 250px; height: auto;" alt="Kočka">
+<img src="images/cats/cat15.jpg"    class="image-item rotate--16" style="top: 46%; left: 50%;  width: 215px; height: auto;" alt="Kočka">
+<img src="images/cats/cat16.gif"    class="image-item rotate-18"  style="top: 60%; left: 28%;  width: 280px; height: auto;" alt="Kočka">
+
+<!-- Opičky vzadu, menší -->
+<img src="images/cats/monkey1.jpg" class="image-item monkey-hidden rotate--10" style="top: 35%; left: 22%;" alt="Opička">
+<img src="images/cats/monkey2.jpeg" class="image-item monkey-hidden rotate-12"  style="top: 45%; left: 60%;"  alt="Opička">
+
+</div>
+<footer class="page-footer-nav">
+  <nav>
+    <a href="strana1_begin.html">1</a>
+    <a href="strana2_kocicky.html">2</a>
+    <a href="strana3_kpopanime.html">3</a>
+    <a href="argoKomiks.html">4</a>
+    <a href="strana5_kdramaheslo.html">5</a>
+  </nav>
+</footer>
+</body>
+</html>
